@@ -1,0 +1,140 @@
+.ElementWrapper {
+    display: inline-block;
+    width: 345px;
+    /* min-height: 345px; */
+    padding-bottom: 30px;
+    margin: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    overflow: hidden;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+.ElementWrapper:hover {
+    box-shadow: 0 0 20px 0px #3333331f;
+}
+.Preview {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ElementWrapper:hover .Preview {
+    background-color: #333;
+}
+.Preview > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #000;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.ElementWrapper:hover .Preview > div {
+    opacity: 0.5;
+}
+.Preview a {
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+.Preview span {
+    background-image: url('../../../assets/images/link-arrow.svg');
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.ElementWrapper:hover span {
+    opacity: 1;
+    margin-right: 20px;
+}
+.ElementWrapper h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #212121;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 24px;
+    margin-bottom: 0;
+}
+.ElementWrapper p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #212121;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 20px 24px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+.ElementWrapper > a {
+    background-color: #f5f3ed;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #212121;
+}
+.ElementWrapper > a:hover {
+    background-color: #e2ddcf;
+}
+
+@media (max-width: 950px) {
+    .ElementWrapper {
+        width: 45%;
+    }
+}
+@media (max-width: 750px) {
+    .ElementWrapper {
+        width: 330px;
+    }
+}
+@media (max-width: 650px) {
+    .ElementWrapper {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 90%;
+        max-width: 300px;
+    }
+}

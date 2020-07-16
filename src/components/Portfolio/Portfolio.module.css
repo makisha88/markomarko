@@ -1,0 +1,75 @@
+.MainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f3ed;
+    height: auto;
+    border-radius: 0;
+}
+.MainWrapper > p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+    color: #513d3d;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+.InnerWrapper {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    padding-top: 0;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ButtonsHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 950px) {
+    .InnerWrapper {
+        width: 90%;
+        max-width: 650px;
+    }
+}
+@media (max-width: 750px) {
+    .InnerWrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 550px;
+    }
+}
+@media (max-width: 650px) {
+    .InnerWrapper {
+        flex-direction: column;
+        display: block;
+    }
+}
+@media (max-width: 550px) {
+    .InnerWrapper {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 90%;
+    }
+}
+@media (max-width: 450px) {
+    .MainWrapper > p {
+        font-size: 11px;
+        text-align: center;
+    }
+}

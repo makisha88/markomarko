@@ -1,0 +1,68 @@
+.AboutMe {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.AboutMe h2 {
+    font-size: 21px;
+    color: #212121;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+.AboutMe p {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 300;
+}
+.AboutMe a {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    transition: all 0.1s ease-in-out;
+}
+.AboutMe a:hover {
+    color: #ff3b30;
+}
+
+@media (max-width: 750px) {
+    .AboutMe {
+        padding-bottom: 20px;
+    }
+    .AboutMe p {
+        font-size: 16px;
+        line-height: 21px;
+        width: 85%;
+    }
+}
+@media (max-width: 550px) {
+    .AboutMe p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 90%;
+    }
+}
+@media (max-width: 450px) {
+    .AboutMe p {
+        font-size: 12px;
+        line-height: 16px;
+        width: 95%;
+    }
+    .AboutMe a {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}

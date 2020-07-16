@@ -1,0 +1,121 @@
+.TopBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.Dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.Dots span {
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+.Dots span:nth-child(1) {
+    background: #ff3b30;
+}
+.Dots span:nth-child(2) {
+    background: #ff9502;
+}
+.Dots span:nth-child(3) {
+    background: #4bda63;
+}
+.FakeInput {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 12px;
+    padding-left: 15px;
+    flex: 4;
+    text-align: left;
+}
+.FakeInput a {
+    text-decoration: none;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+.FakeInput a:hover {
+    color: #ff3b30;
+}
+.FakeInput a span {
+    cursor: pointer;
+    font-size: 21px;
+    position: relative;
+    opacity: 1;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 1.4s;
+    -webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.4s;
+}
+.Links {
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 4;
+}
+.Links a {
+    color: #212121;
+    font-size: 21px;
+    padding: 7px;
+    transition: all 0.1s ease-in-out;
+}
+.Links a:hover {
+    color: #ff3b30;
+}
+
+/* Animation */
+@-webkit-keyframes blink {
+	0%   { opacity: 1;}
+  49%  { opacity: 1;}
+  50%  {opacity: 0;}
+  99%  {opacity: 0;}
+  100% { opacity: 1;}
+}
+@keyframes blink {
+	0%   { opacity: 1;}
+  49%  { opacity: 1;}
+  50%  {opacity: 0;}
+  99%  {opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@media (max-width: 650px) {
+    .FakeInput {
+        flex: 7;
+    }
+    .Links {
+        flex: 2;
+    }
+}
+@media (max-width: 450px) {
+    .Dots {
+        display: none;
+    }
+    .FakeInput {
+        padding: 9px;
+        padding-left: 10px;
+        margin-left: 15px;
+    }
+    .FakeInput a {
+        font-size: 13px;
+        line-height: normal;
+    }
+}

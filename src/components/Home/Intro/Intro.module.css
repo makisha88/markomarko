@@ -1,0 +1,53 @@
+.HomeTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    flex: 1;
+}
+.HomeTitle h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 92px;
+    color: #212121;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 950px) {
+    .HomeTitle {
+        width: 115%;
+    }
+    .HomeTitle h1 {
+        font-size: 78px;
+    }
+}
+@media (max-width: 750px) {
+    .HomeTitle h1 {
+        font-size: 68px;
+    }
+}
+@media (max-width: 650px) {
+    .HomeTitle {
+        width: 95%;
+    }
+    .HomeTitle h1 {
+        font-size: 52px;
+    }
+}
+@media (max-width: 550px) {
+    .HomeTitle h1 {
+        font-size: 44px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 450px) {
+    .HomeTitle h1 {
+        font-size: 29px;
+    }
+}

@@ -1,0 +1,65 @@
+.MainWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.MainWrapper > p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+    color: #513d3d;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+.InnerWrapper {
+    background-color: #f5f3ed;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 620px;
+    width: 750px;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+.ButtonsHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+}
+
+@media (max-width: 950px) {
+    .InnerWrapper {
+        width: 80%;
+    }
+}
+@media (max-width: 750px) {
+    .InnerWrapper {
+        height: auto;
+        min-height: 500px;
+    }
+}
+@media (max-width: 650px) {
+    .InnerWrapper {
+        width: 90%;
+        min-height: 450px;
+    }
+}
+@media (max-width: 450px) {
+    .InnerWrapper {
+        min-height: 350px;
+    }
+    .MainWrapper > p {
+        font-size: 11px;
+        text-align: center;
+    }
+}
