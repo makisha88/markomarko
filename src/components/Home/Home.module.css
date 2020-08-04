@@ -16,6 +16,7 @@
     text-align: center;
 }
 .InnerWrapper {
+    position: relative;
     background-color: #f5f3ed;
     border-radius: 15px;
     justify-content: space-between;

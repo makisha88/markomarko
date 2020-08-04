@@ -1,4 +1,5 @@
 .AboutMe {
+    position: relative;
     display: flex;
     position: relative;
     width: 100%;
@@ -6,12 +7,6 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
-}
-.AboutMe h2 {
-    font-size: 21px;
-    color: #212121;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
 }
 .AboutMe p {
     display: block;
@@ -36,6 +31,13 @@
 }
 .AboutMe a:hover {
     color: #ff3b30;
+}
+
+@media (max-width: 950px) {
+    .AboutMe {
+        left: 0 !important;
+        top: 0 !important;
+    }
 }
 
 @media (max-width: 750px) {

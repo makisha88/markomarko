@@ -1,0 +1,147 @@
+.SVG {
+    width: 100%;
+    height: 100%;
+}
+
+.AnimatedPath1, .AnimatedPath2, .AnimatedPath3, .AnimatedPath4, .AnimatedPath5, .AnimatedPath6,
+.AnimatedPath7, .AnimatedPath8, .AnimatedPath9, .AnimatedPath10, .AnimatedPath11, .AnimatedPath12,
+.AnimatedPath13, .AnimatedPath14, .AnimatedPath15, .AnimatedPath16, .AnimatedPath17, .AnimatedPath18,
+.AnimatedPath19 {
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 1100;
+    fill: transparent;
+    animation: letters 2.5s linear forwards;
+    stroke: #000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    position: relative;
+}
+.AnimatedPath1 {
+    stroke-dasharray: 3100;
+    stroke-dashoffset: 3100;
+    display: none;
+}
+.AnimatedPath2 {
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+.AnimatedPath3 {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+}
+.AnimatedPath4 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+.AnimatedPath5 {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+.AnimatedPath6 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+.AnimatedPath7 {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+.AnimatedPath8 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+.AnimatedPath9 {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+}
+.AnimatedPath10 {
+    stroke-dasharray: 1450;
+    stroke-dashoffset: 1450;
+}
+.AnimatedPath11 {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+}
+.AnimatedPath12 {
+    stroke-dasharray: 1050;
+    stroke-dashoffset: 1050;
+}
+.AnimatedPath13 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+.AnimatedPath14 {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+}
+.AnimatedPath15 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+.AnimatedPath16 {
+    stroke-dasharray: 2050;
+    stroke-dashoffset: 2050;
+}
+.AnimatedPath17 {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+.AnimatedPath18 {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+}
+.AnimatedPath19 {
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+}
+
+.AnimatedUnderlines {
+    fill: none;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: underlines 2.5s linear forwards;
+    stroke: rgb(211, 58, 58);
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.Background {
+    animation: fadeIn 2.5s linear forwards;
+    position: relative;
+    opacity: 0;
+}
+
+@keyframes letters {
+    40% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+    60% {
+        fill: #000;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        fill: #000;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes underlines {
+    60% {
+        stroke-dashoffset: 900;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeIn {
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -4,7 +4,9 @@ import TopBar from '../TopBar/TopBar';
 import classes from './Home.module.css';
 
 const home = (props) => (
-    <div className={classes.MainWrapper}>
+    <div className={classes.MainWrapper}
+        onMouseMove={props.MouseHandler}
+        onClick={props.TestClick}>
         <div className={classes.InnerWrapper}>
             <TopBar />
             {props.homeContent}

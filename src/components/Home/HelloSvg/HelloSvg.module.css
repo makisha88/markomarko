@@ -1,0 +1,51 @@
+.SVG {
+    width: 35%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.AnimatedLetters {
+    stroke-dasharray: 3630;
+    stroke-dashoffset: 3630;
+    fill: transparent;
+    animation: letters 2.5s linear forwards;
+    stroke: #000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    position: relative;
+}
+
+.AnimatedUnderline {
+    fill: none;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: underlines 2.5s linear forwards;
+    stroke: rgb(211, 58, 58);
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+
+@keyframes letters {
+    40% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+    60% {
+        fill: #000;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        fill: #000;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes underlines {
+    60% {
+        stroke-dashoffset: 900;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

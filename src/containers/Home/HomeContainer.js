@@ -8,13 +8,26 @@ import AboutMe from '../../components/Home/AboutMe/AboutMe';
 import NotFound from '../../components/PageNotFound/PageNotFound';
 
 class HomeContainer extends Component {
+
+    state = {
+        x: 1,
+        y: 1
+    };
+    
+    MouseEvent = () => {
+        window.onmousemove = (e) => {
+            if (e) {
+                this.setState({x: e.pageX, y: e.pageY});
+            }
+        } 
+    }
+
     render () {
-        // console.log('HOME CONTAINER', this.props);
         let homeContent
         let buttons
         switch(this.props.location.pathname) {
             case '/about':
-                homeContent = <AboutMe />
+                homeContent = <AboutMe MoveX={this.state.x} MoveY={this.state.y} />
                 buttons = <Fragment>
                     <CustomButton 
                         label={'Go Back'}
@@ -26,7 +39,7 @@ class HomeContainer extends Component {
                 </Fragment>
                 break;
             case '/':
-                homeContent = <Intro />
+                homeContent = <Intro MoveX={this.state.x} MoveY={this.state.y} />
                 buttons = <Fragment>
                     <CustomButton 
                         goTo={() => this.props.history.push('/portfolio')}
@@ -54,7 +67,8 @@ class HomeContainer extends Component {
         return (
             <Home
                 homeContent={homeContent}
-                buttons={buttons} />
+                buttons={buttons}
+                MouseHandler={this.MouseEvent} />
         )
     }
 }

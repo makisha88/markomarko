@@ -51,12 +51,10 @@
     border: 3px solid #513d3d;
     border-radius: 50%;
     width: 58px;
-    height: 58px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 22px;
     position: relative;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 .ButtonLeft .ButtonArrow {
     transform: rotate(180deg);
@@ -88,7 +86,9 @@
 @media (max-width: 550px) {
     .ButtonArrow {
         width: 50px;
-        height: 50px;
+        height: 16px;
+        padding-top: 17px;
+        padding-bottom: 17px;
     }
     .ButtonArrow > div {
         width: 3px;
