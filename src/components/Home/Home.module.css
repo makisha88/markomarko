@@ -53,6 +53,7 @@
     .InnerWrapper {
         width: 90%;
         min-height: 450px;
+        height: 75vh;
     }
 }
 @media (max-width: 450px) {
